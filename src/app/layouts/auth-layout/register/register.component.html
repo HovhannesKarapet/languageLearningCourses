@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h4>Register</h4>
+      <form [formGroup]="form" (ngSubmit)="register()">
+        <div class="form-group">
+          <small class="d-block text-right text-danger" *ngFor="let message of messages">*{{message}}</small>
+          <label>Full Name</label>
+          <input type="email" class="form-control" formControlName="full_name"
+                 [ngClass]="{'is-invalid': form.get('full_name').invalid && form.get('full_name').touched}">
+        </div>
+        <div class="form-group">
+          <label>Email address</label>
+          <input type="email" class="form-control" formControlName="email"
+                 [ngClass]="{'is-invalid': form.get('email').invalid && form.get('email').touched}">
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control" formControlName="password"
+                 [ngClass]="{'is-invalid': form.get('password').invalid && form.get('password').touched}">
+        </div>
+        <div class="form-group">
+          <label>Repeat Password</label>
+          <input type="password" class="form-control" formControlName="repeat_password"
+                 [ngClass]="{'is-invalid': form.get('repeat_password').value !== form.get('password').value
+                  && form.get('repeat_password').touched }">
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6">
+            <button type="submit" class="btn btn-outline-secondary">Register
+              <div class="spinner-border" role="status" *ngIf="loading">
+                <span class="sr-only">Loading...</span>
+              </div>
+            </button>
+          </div>
+          <div class="col-6 text-right">
+            <a routerLink="/auth/login" class="text-secondary">Sign In</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

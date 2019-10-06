@@ -1,0 +1,55 @@
+.intro{
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.main_header, .time {
+  color: #818181;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.sub_text {
+  color: #818181;
+  position: relative;
+  bottom: 10px;
+}
+
+.custom-control-label{
+  font-size: 14px;
+  line-height: 25px;
+}
+.right_btn {
+  transition: all .1s linear;
+  &:hover {
+    transform: translate3d(5px, 5px, 0);
+    -webkit-transform: translate3d(5px, 0, 0);
+  }
+}
+.left_btn {
+  transition: all .1s linear;
+  &:hover {
+    transform: translate3d(-5px, 5px, 0);
+    -webkit-transform: translate3d(-5px, 0, 0);
+  }
+}
+.arrow {
+  border: solid #1a1a1a;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}

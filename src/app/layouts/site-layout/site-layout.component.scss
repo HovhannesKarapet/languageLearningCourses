@@ -1,0 +1,37 @@
+.bg_color {
+  background-color: #1a1a1a;
+}
+.xs_show {
+  display: none;
+}
+.navbar-toggler {
+  border: 0;
+  transform: translate3d(-5px, -5px, 0);
+  &:focus {
+    outline: 0;
+  }
+}
+.border_less {
+  border: 0;
+}
+.card {
+  background: none;
+  border: none;
+}
+.btn-link {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    color: #dc3545;
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .xs_hide {
+    display: none;
+  }
+  .xs_show {
+    display: inline-block;
+  }
+}

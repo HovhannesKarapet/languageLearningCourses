@@ -1,0 +1,49 @@
+<nav class="navbar navbar-dark bg_color">
+  <div>
+    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent"
+            [attr.aria-expanded]="!navbar" (click)="navbar = !navbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+      <h3 class="text-white">Language<span class="text-danger">Courses</span></h3>
+    </a>
+  </div>
+  <button class="btn btn-outline-light xs_hide" (click)="signOut()">Sign out</button>
+
+
+  <div class="collapse navbar-collapse" [collapse]="navbar" [isAnimated]="true" id="navbarSupportedContent">
+    <div class="text-right">
+      <button class="btn btn-outline-light mb-1 border_less xs_show" (click)="signOut()">
+        Sign out
+      </button>
+    </div>
+    <div class="accordion" id="accordion">
+      <div class="card" *ngFor="let level of levels, let i = index">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" (click)="isCollapsed[i] = !isCollapsed[i]"
+                    [attr.aria-expanded]="!isCollapsed[i]" aria-controls="collapse" [disabled]="!able_levels[i]">
+              {{level.name}}
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapse" class="collapse" [collapse]="!isCollapsed[i]" [isAnimated]="true">
+          <div class="card-body">
+            <ul>
+              <li *ngFor="let lesson of level.lessons">
+                <button class="btn btn-link" (click)="setLesson(lesson.id)">
+                  {{lesson.name}}
+                </button>
+              </li>
+            </ul>
+            <hr>
+            <button class="btn btn-link" (click)="setTest(level.test_id); navbar = true">test</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

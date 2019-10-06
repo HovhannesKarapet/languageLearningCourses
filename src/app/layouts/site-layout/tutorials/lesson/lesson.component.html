@@ -1,0 +1,19 @@
+<div class="container">
+
+  <div class="header">
+    <h4 class="sup_header">{{lesson?.name}}</h4>
+    <h2 class="main_header">{{lesson?.header}}</h2>
+  </div>
+  <div class="definitions">
+    <div class="definition" *ngFor="let definition of lesson?.definitions">
+      <p><i>"{{definition.definition}}"</i></p>
+    </div>
+  </div>
+
+  <div class="exercises" *ngFor="let exercise of lesson?.exercises">
+    <p>{{exercise.eng_text}}</p>
+    <hr class="line">
+    <p>{{exercise.rus_text}}</p>
+  </div>
+
+</div>

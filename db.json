@@ -1,0 +1,366 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "full_name": "Carl Jonson",
+      "email": "cj@gmail.com",
+      "password": "123456",
+      "level": 1
+    },
+    {
+      "id": 2,
+      "full_name": "User",
+      "email": "user@gmail.com",
+      "level": 3
+    }
+  ],
+  "levels": [
+    {
+      "id": 1,
+      "name": "Level 1",
+      "lessons": [
+        {
+          "id": 1,
+          "name": "Lesson 1"
+        },
+        {
+          "id": 2,
+          "name": "Lesson 2"
+        }
+      ],
+      "test_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Level 2",
+      "lessons": [
+        {
+          "id": 3,
+          "name": "Lesson 1"
+        }
+      ],
+      "test_id": 2
+    },
+    {
+      "id": 3,
+      "name": "Level 3",
+      "lessons": [
+        {
+          "id": 4,
+          "name": "Lesson 1"
+        }
+      ],
+      "test_id": 3
+    }
+  ],
+  "lessons": [
+    {
+      "id": 1,
+      "name": "Lesson 1",
+      "header": "Grammar",
+      "definitions": [
+        {
+          "definition": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolores eligendi fuga iusto, nihil nostrum quaerat repellat vitae voluptas voluptatibus? Ab corporis, eveniet omnis placeat quae quaerat quia? Facilis, nemo, ratione! Debitis fugiat minus provident?"
+        }
+      ],
+      "exercises": [
+        {
+          "eng_text": "A baby pig is almost killed because of his status – he is the smallest pig that was born and he is considered to be useless and of no value. The pig is saved by a little girl called Fern Arable. She adopts the pig and takes care of it. She gives him the name Wilbur.\n      Fern grows sad when Wilbur grows up and has to be sent away to a farm owned by her uncle. She has a strong relationship with Wilbur. When Wilbur goes to the farm, all the other farm animals ignore him and he’s left crying for his human friend. One day he hears a voice, but he can’t see anything. This voice promises to become friends with him.\n      The voice belongs to a small spider called Charlotte. Charlotte the spider knows that the farmers are planning to kill Wilbur. She promises to make a plan to save his life. The farmers are surprised the next day when they see the words “some pig” written in the web* Charlotte has made. Charlotte asked for the other animals’ help over the day to write messages everywhere.",
+          "rus_text": "Поросенка почти убивают из – за его статуса-он самый маленький поросенок, который родился, и он считается бесполезным и не имеющим ценности. Свинью спасает маленькая девочка по имени Ферн Эрабл. Она усыновляет свинью и заботится о ней. Она дает ему имя Уилбур.\n      Ферн становится грустно, когда Уилбур растет и должен быть отправлен на ферму, принадлежащую ее дяде. У нее крепкие отношения с Уилбуром. Когда Уилбур идет на ферму, все другие животные игнорируют его, и он остается плакать по своему человеческому другу. Однажды он слышит голос, но ничего не видит. Этот голос обещает подружиться с ним.\n      Голос принадлежит маленькой паучихе по имени Шарлотта. Шарлотта паук знает, что фермеры планируют убить Уилбур. Она обещает составить план спасения его жизни. Фермеры удивляются на следующий день, когда они видят слова \"какая-то свинья\", написанные в сети* Шарлотта сделала. Шарлотта попросила помощи других животных в течение дня, чтобы написать сообщения везде."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Lesson 2",
+      "header": "Some Text",
+      "definitions": [
+        {
+          "definition": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolores eligendi fuga iusto, nihil nostrum quaerat repellat vitae voluptas voluptatibus? Ab corporis, eveniet omnis placeat quae quaerat quia? Facilis, nemo, ratione! Debitis fugiat minus provident?"
+        }
+      ],
+      "exercises": [
+        {
+          "eng_text": "A baby pig is almost killed because of his status – he is the smallest pig that was born and he is considered to be useless and of no value. The pig is saved by a little girl called Fern Arable. She adopts the pig and takes care of it. She gives him the name Wilbur.\n      Fern grows sad when Wilbur grows up and has to be sent away to a farm owned by her uncle. She has a strong relationship with Wilbur. When Wilbur goes to the farm, all the other farm animals ignore him and he’s left crying for his human friend. One day he hears a voice, but he can’t see anything. This voice promises to become friends with him.\n      The voice belongs to a small spider called Charlotte. Charlotte the spider knows that the farmers are planning to kill Wilbur. She promises to make a plan to save his life. The farmers are surprised the next day when they see the words “some pig” written in the web* Charlotte has made. Charlotte asked for the other animals’ help over the day to write messages everywhere.",
+          "rus_text": "Поросенка почти убивают из – за его статуса-он самый маленький поросенок, который родился, и он считается бесполезным и не имеющим ценности. Свинью спасает маленькая девочка по имени Ферн Эрабл. Она усыновляет свинью и заботится о ней. Она дает ему имя Уилбур.\n      Ферн становится грустно, когда Уилбур растет и должен быть отправлен на ферму, принадлежащую ее дяде. У нее крепкие отношения с Уилбуром. Когда Уилбур идет на ферму, все другие животные игнорируют его, и он остается плакать по своему человеческому другу. Однажды он слышит голос, но ничего не видит. Этот голос обещает подружиться с ним.\n      Голос принадлежит маленькой паучихе по имени Шарлотта. Шарлотта паук знает, что фермеры планируют убить Уилбур. Она обещает составить план спасения его жизни. Фермеры удивляются на следующий день, когда они видят слова \"какая-то свинья\", написанные в сети* Шарлотта сделала. Шарлотта попросила помощи других животных в течение дня, чтобы написать сообщения везде."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Lesson 1",
+      "header": "Some Text",
+      "definitions": [
+        {
+          "definition": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolores eligendi fuga iusto, nihil nostrum quaerat repellat vitae voluptas voluptatibus? Ab corporis, eveniet omnis placeat quae quaerat quia? Facilis, nemo, ratione! Debitis fugiat minus provident?"
+        }
+      ],
+      "exercises": [
+        {
+          "eng_text": "Some English text",
+          "rus_text": "Translation for English text"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Lesson 1",
+      "header": "Some Text",
+      "definitions": [
+        {
+          "definition": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolores eligendi fuga iusto, nihil nostrum quaerat repellat vitae voluptas voluptatibus? Ab corporis, eveniet omnis placeat quae quaerat quia? Facilis, nemo, ratione! Debitis fugiat minus provident?"
+        },
+        {
+          "definition": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolores eligendi fuga iusto, nihil nostrum quaerat repellat vitae voluptas voluptatibus? Ab corporis, eveniet omnis placeat quae quaerat quia? Facilis, nemo, ratione! Debitis fugiat minus provident?"
+        }
+      ],
+      "exercises": [
+        {
+          "eng_text": "Some English text",
+          "rus_text": "Translation for English text"
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "id": 1,
+      "header": "Level 1",
+      "questions": [
+        {
+          "question": "question I",
+          "answers": [
+            {
+              "answer": "answer 1",
+              "is_right": true
+            },
+            {
+              "answer": "answer 2",
+              "is_right": false
+            },
+            {
+              "answer": "answer 3",
+              "is_right": false
+            }
+          ]
+        },
+        {
+          "question": "question II",
+          "answers": [
+            {
+              "answer": "answer 21",
+              "is_right": false
+            },
+            {
+              "answer": "answer 26",
+              "is_right": false
+            },
+            {
+              "answer": "answer 33",
+              "is_right": true
+            }
+          ]
+        },
+        {
+          "question": "question III",
+          "answers": [
+            {
+              "answer": "answer 21",
+              "is_right": false
+            },
+            {
+              "answer": "answer 26",
+              "is_right": false
+            },
+            {
+              "answer": "answer 33",
+              "is_right": true
+            }
+          ]
+        },
+        {
+          "question": "question IV",
+          "answers": [
+            {
+              "answer": "answer 21",
+              "is_right": false
+            },
+            {
+              "answer": "answer 26",
+              "is_right": false
+            },
+            {
+              "answer": "answer 33",
+              "is_right": true
+            }
+          ]
+        },
+        {
+          "question": "question V",
+          "answers": [
+            {
+              "answer": "answer 21",
+              "is_right": false
+            },
+            {
+              "answer": "answer 26",
+              "is_right": false
+            },
+            {
+              "answer": "answer 33",
+              "is_right": true
+            }
+          ]
+        },
+        {
+          "question": "question VI",
+          "answers": [
+            {
+              "answer": "answer 21",
+              "is_right": false
+            },
+            {
+              "answer": "answer 26",
+              "is_right": false
+            },
+            {
+              "answer": "answer 33",
+              "is_right": true
+            }
+          ]
+        },
+        {
+          "question": "question VII",
+          "answers": [
+            {
+              "answer": "answer 21",
+              "is_right": false
+            },
+            {
+              "answer": "answer 26",
+              "is_right": false
+            },
+            {
+              "answer": "answer 33",
+              "is_right": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "header": "Level 2",
+      "questions": [
+        {
+          "question": "question I III",
+          "answers": [
+            {
+              "answer": "answer 1",
+              "is_right": true
+            },
+            {
+              "answer": "answer 2",
+              "is_right": false
+            },
+            {
+              "answer": "answer 3",
+              "is_right": false
+            }
+          ]
+        },
+        {
+          "question": "question II",
+          "answers": [
+            {
+              "answer": "answer 21",
+              "is_right": false
+            },
+            {
+              "answer": "answer 26",
+              "is_right": false
+            },
+            {
+              "answer": "answer 33",
+              "is_right": true
+            }
+          ]
+        },
+        {
+          "question": "question III",
+          "answers": [
+            {
+              "answer": "answer 21",
+              "is_right": false
+            },
+            {
+              "answer": "answer 26",
+              "is_right": false
+            },
+            {
+              "answer": "answer 33",
+              "is_right": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "header": "Level 3",
+      "questions": [
+        {
+          "question": "question I III",
+          "answers": [
+            {
+              "answer": "answer 1",
+              "is_right": true
+            },
+            {
+              "answer": "answer 2",
+              "is_right": false
+            },
+            {
+              "answer": "answer 3",
+              "is_right": false
+            }
+          ]
+        },
+        {
+          "question": "question II",
+          "answers": [
+            {
+              "answer": "answer 21",
+              "is_right": false
+            },
+            {
+              "answer": "answer 26",
+              "is_right": false
+            },
+            {
+              "answer": "answer 33",
+              "is_right": true
+            }
+          ]
+        },
+        {
+          "question": "question III",
+          "answers": [
+            {
+              "answer": "answer 21",
+              "is_right": false
+            },
+            {
+              "answer": "answer 26",
+              "is_right": false
+            },
+            {
+              "answer": "answer 33",
+              "is_right": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

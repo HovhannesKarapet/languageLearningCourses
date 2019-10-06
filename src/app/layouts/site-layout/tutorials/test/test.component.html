@@ -1,0 +1,41 @@
+
+<div class="intro" *ngIf="!show_test">
+  <button class="btn btn-outline-dark px-4" (click)="startTest()">Start</button>
+</div>
+
+<div class="container"  *ngIf="show_test">
+
+  <div class="header">
+    <h4 class="main_header">{{header}}</h4>
+    <h6 class="time" *ngIf="!show_result">{{question_time}}</h6>
+  </div>
+
+  <div class="result" *ngIf="show_result">
+    <h2>Result {{((right_count/questions_count)*100).toFixed(1)}} %</h2>
+    <h5 class="sub_text">{{result_text}}</h5>
+  </div>
+
+  <div class="test" *ngIf="!show_result">
+    <div class="question">
+      <h2 class="question_text">
+        {{question?.question}}
+      </h2>
+      <div class="question_answers mt-3">
+        <div class="custom-control custom-radio" *ngFor="let answer of question?.answers, let i = index">
+          <input type="radio" id="radio + {{i}}" [(ngModel)]="selected_answer" value="{{i}}"
+                 class="custom-control-input">
+          <label class="custom-control-label" for="radio + {{i}}">{{answer.answer}}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-3" *ngIf="!show_result">
+    <div class="col-12 text-center">
+      <button class="btn left_btn" (click)="previousPage()"><i class="arrow left"></i></button>
+      <button class="btn btn-outline-dark" (click)="confirm()">Confirm</button>
+      <button class="btn right_btn" (click)="nextPage()"><i class="arrow right"></i></button>
+    </div>
+  </div>
+
+</div>
