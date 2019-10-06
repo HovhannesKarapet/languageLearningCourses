@@ -1,18 +1,5 @@
 {
   "users": [
-    {
-      "id": 1,
-      "full_name": "Carl Jonson",
-      "email": "cj@gmail.com",
-      "password": "123456",
-      "level": 1
-    },
-    {
-      "id": 2,
-      "full_name": "User",
-      "email": "user@gmail.com",
-      "level": 3
-    }
   ],
   "levels": [
     {

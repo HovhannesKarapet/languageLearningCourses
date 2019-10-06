@@ -11,10 +11,10 @@ import {Router} from '@angular/router';
 export class RegisterComponent implements OnInit {
 
   public form: FormGroup = new FormGroup({
-    full_name       : new FormControl('User', [Validators.required, Validators.pattern("[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*")]),
-    email           : new FormControl('user@gmail.com', [Validators.required, Validators.email]),
-    password        : new FormControl('123456', [Validators.required, Validators.minLength(6)]),
-    repeat_password : new FormControl('123456', [Validators.required, Validators.minLength(6)])
+    full_name       : new FormControl(null, [Validators.required, Validators.pattern("[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*")]),
+    email           : new FormControl(null, [Validators.required, Validators.email]),
+    password        : new FormControl(null, [Validators.required, Validators.minLength(6)]),
+    repeat_password : new FormControl(null, [Validators.required, Validators.minLength(6)])
   });
   public messages : string[];
   public loading  : boolean;
